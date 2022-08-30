@@ -26,17 +26,25 @@
   color: #fcfafa;
 }
 
-.song {
-  margin-left: 100px;
+.text {
+  text-align: center;
   width: 400px;
+  color: #fcfafa;
+  margin: auto;
+}
+
+.song {
+  text-align: right;
+  margin-right: 295px;
   color: #fcfafa;
 }
 .songP {
-  margin-left: 100px;
+  text-align: right;
+  margin-right: 100px;
 }
 
 .gallery {
-  margin: 5px;
+  margin: 30px;
   background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
   transition: transform .2s;
@@ -51,17 +59,14 @@
 }
 
 .gallery img {
-  width: 100%;
+  width: 250px;
   height: 200px;
+  margin: auto;
 }
 
 .desc {
   padding: 15px;
   text-align: center;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .responsive {
@@ -70,13 +75,35 @@
   width: 24.99999%;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1050px) {
   .responsive {
-    width: 50%;
+    width: 33.33333%;
     margin: 6px 0;
+    text-align: justify;
   }
   .gallery {
     width: auto;
+  }
+  img.gallery:hover{
+
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+    text-align: justify;
+  }
+  .gallery {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
   }
   img.gallery:hover{
 
@@ -90,26 +117,56 @@
   .introducin {
     width: auto;
   }
-  .songP {
-    margin-left: 30px;
+  .text {
+    width: auto;
   }
   .song {
-    margin-left: 30px;
+    text-align: left;
+    margin-left: 100px;
+    width: 100px;
+    color: #fcfafa;
+  }
+  .songP {
+    text-align: left;
+    margin-left: 100px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
   .responsive {
     width: 100%;
+    text-align: center;
   }
   .gallery {
-    width: auto;
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
   }
   .imgC {
     height: 200px;
   }
+  .intro {
+    margin-left: 10px;
+  }
   .introducin {
+    margin-left: 10px;
+    margin-right: 10px;
     width: auto;
+  }
+  .song {
+    text-align: left;
+    margin-left: 10px;
+    width: 200px;
+    color: #fcfafa;
+  }
+  .songP {
+    text-align: left;
+    margin-left: 10px;
   }
 }
 

@@ -1,0 +1,164 @@
+.body {
+  background-color: #404040;
+}
+
+.grad {
+  width: auto;
+  height: 300px;
+  background-image: linear-gradient(#404040, #4070f5);
+}
+
+.perfilMo{
+  border-radius: 80%;
+}
+
+.perfilMoC {
+  text-align: center;
+}
+
+.song {
+  text-align: right;
+  margin-right: 295px;
+  color: #fcfafa;
+}
+.songP {
+  text-align: right;
+  margin-right: 100px;
+}
+
+.detalhes {
+  color: white;
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+
+.gallery {
+  margin: 30px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.49);
+  transition: transform .2s;
+  float: left;
+  width: auto;
+}
+
+.gallery:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.25);
+  background-color: #4070f5;
+}
+
+.gallery img {
+  width: 250px;
+  height: 200px;
+  margin: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 06px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .responsive {
+    width: 33.33333%;
+    margin: 6px 0;
+    text-align: justify;
+  }
+  .gallery {
+    width: auto;
+  }
+  img.gallery:hover{
+
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+    text-align: justify;
+  }
+  .gallery {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+  }
+  img.gallery:hover{
+
+  }
+  .song {
+    text-align: left;
+    margin-left: 100px;
+    width: 100px;
+    color: #fcfafa;
+  }
+  .songP {
+    text-align: left;
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .responsive {
+    width: 100%;
+    text-align: center;
+  }
+  .gallery {
+    width: 90%;
+    height: auto;
+    text-align: center;
+  }
+  .gallery img {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+  }
+  .song {
+    text-align: left;
+    margin-left: 10px;
+    width: 200px;
+    color: #fcfafa;
+  }
+  .songP {
+    text-align: left;
+    margin-left: 10px;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.scroll-top-wrapper {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+    right: 50px;
+    bottom: 50px;
+}
+.scroll-top-wrapper:hover {
+    background-color: #0017ff00;
+}
+.scroll-top-wrapper.show {
+    visibility:visible;
+    cursor:pointer;
+    opacity: 1.0;
+}
+.scroll-top-wrapper i.fa {
+    line-height: inherit;
+}
